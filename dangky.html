@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+      href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="trangchu.html"><img src="images/logo.png" alt="logo" /></a>
+      <nav>
+        <a href="trangchu.html">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="tintuc.html">Tin tức</a>
+        <a href="dangnhap.html">Đăng nhập</a>
+        <a href="dangky.html">Đăng ký</a>
+        <a href="lienhe.html">Liên hệ</a>
+
+        <div>
+          <input type="text" placeholder="Nhập nội dung cần tìm..." /><i
+            class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </nav>
+
+      <img src="images/header-img1.png" alt="header-img1" id="header-img1" />
+      <img src="images/header-img2.png" alt="header-img2" id="header-img2" />
+      <img src="images/header-img3.png" alt="header-img3" id="header-img3" />
+    </header>
+
+    <main class="dangky">
+      <form
+        method="post"
+        enctype="multipart/form-data"
+        onsubmit="return false"
+        class="dangky">
+        <h1>ĐĂNG KÝ</h1>
+
+        <table class="dangky">
+          <tr>
+            <td>
+              <label for="email"><i class="fas fa-envelope"></i></label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Vui lòng nhập email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password"><i class="fas fa-key"></i></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Vui lòng nhập mật khẩu" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="rp-password"><i class="fas fa-key"></i></label>
+            </td>
+            <td>
+              <input
+                type="password"
+                id="rp-password"
+                name="rp-password"
+                placeholder="Vui lòng nhập mật khẩu" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="silver"><i class="fas fa-users"></i></label>
+            </td>
+            <td>
+              <input type="radio" id="silver" name="rank" value="silver" />
+              <label for="silver">Bạc</label>
+
+              <input type="radio" id="gold" name="rank" value="gold" />
+              <label for="gold">Vàng</label>
+
+              <input type="radio" id="platinum" name="rank" value="platinum" />
+              <label for="platinum">Bạch Kim</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="avatar"><i class="fas fa-id-badge"></i></label>
+            </td>
+            <td><input type="file" id="avatar" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              Thông qua việc tạo tài khoản, bản đồng ý với
+              <a href="">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Đăng ký" />
+              <input type="reset" value="Hủy" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer>
+      &copy; 2021 Bản quyền thuộc về FreezeVN.
+      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+      <a href="#top" id="top-icon"></a>
+    </footer>
+  </body>
+</html>

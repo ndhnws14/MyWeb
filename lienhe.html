@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+      href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="trangchu.html"><img src="images/logo.png" alt="logo" /></a>
+      <nav>
+        <a href="trangchu.html">Trang chủ</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="tintuc.html">Tin tức</a>
+        <a href="dangnhap.html">Đăng nhập</a>
+        <a href="dangky.html">Đăng ký</a>
+        <a href="lienhe.html">Liên hệ</a>
+
+        <div>
+          <input type="text" placeholder="Nhập nội dung cần tìm..." /><i
+            class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </nav>
+
+      <img src="images/header-img1.png" alt="header-img1" id="header-img1" />
+      <img src="images/header-img2.png" alt="header-img2" id="header-img2" />
+      <img src="images/header-img3.png" alt="header-img3" id="header-img3" />
+    </header>
+
+    <main class="layout-1-col lienhe">
+      <!-- <img src="images/trangchu/bg-home.jpg" alt="background" /> -->
+      <div class="left-cell">
+        <h1>Liên Hệ</h1>
+        <p>
+          <img src="images/lienhe/check-in.png" alt="check-in" class="lienhe" />
+          <b>Địa Chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</b>
+          Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu
+          mẫu bên dưới. Xin cảm ơn.
+        </p>
+      </div>
+
+      <form
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        onsubmit="return false"
+        class="article-cell">
+        <h1>Góp Ý</h1>
+        <table class="lienhe">
+          <tr>
+            <td>
+              <label for="name"><i class="fas fa-user"></i></label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Vui lòng nhập Họ tên của bạn" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><i class="fas fa-envelope"></i></label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Vui lòng nhập địa chỉ Email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="topics"><i class="fas fa-list"></i></label>
+            </td>
+            <td>
+              <select name="topics" id="topics">
+                <option value="product-service">Về Sản Phẩm/Dịch Vụ</option>
+                <option value="member">Về Ưu Đãi Thành Viên</option>
+                <option value="hire">Về Tin Tuyển Dụng</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-sticky-note"></i></td>
+            <td colspan="2">
+              <textarea
+                name="content"
+                id="content"
+                cols="50"
+                rows="7"
+                placeholder="Nội dung cần liên hệ"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Gửi" /></td>
+          </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer>
+      &copy; 2021 Bản quyền thuộc về FreezeVN.
+      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+      <a href="#top" id="top-icon"></a>
+    </footer>
+  </body>
+</html>
